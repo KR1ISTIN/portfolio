@@ -1,0 +1,73 @@
+
+
+.projects {
+    background:'#22222B'
+}
+
+.gitFoodPic {
+    width: 100%;
+    height: 100%;
+    padding:10%
+}
+
+.projectText {
+    
+    text-align: left;
+    padding: 8%;
+    font-size: 1.1em;
+    background: -webkit-linear-gradient(rgba(72, 213, 206, 0.719), rgb(241, 232, 232));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projectTitle {
+    color:pink;
+     padding-right:70%;
+     letter-spacing:.1em
+}
+
+
+    .linkProject {
+      background-image: linear-gradient(
+        to right,
+        #54b3d6,
+        #54b3d6 50%,
+        rgb(235, 224, 224) 50%
+      );
+      letter-spacing: .1em;
+      margin: 1em;
+      border: 1px white solid;
+      background-size: 200% 100%;
+      background-position: -100%;
+      display: inline-block;
+      padding: 2%;
+      position: relative;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .linkProject:before{
+
+      content: '';
+      background: #54b3d6;
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .linkProject:hover {
+      background-position: 0;
+    }
+    
+    .linkProject:hover::before{
+      width: 100%;
+    }
+    
+  
+  
+  
