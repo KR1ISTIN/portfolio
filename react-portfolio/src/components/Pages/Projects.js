@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style.css';
+import Zoom from 'react-reveal/Zoom';
 
 
 
@@ -8,7 +9,11 @@ export default function Projects() {
     <div style={{background:'#22222B'}} className='projects'>
         <div class="container">
             <p style={{padding:'2%', fontSize:'1.2em', letterSpacing:'.3em', fontWeight:'bold',color:'whitesmoke'}}>Projects</p>
-            <p style={{ fontSize:'1.2em', letterSpacing:'.3em', color: 'lightseagreen'}}>A Selection of Stuff I've Built</p>
+            <p style={{ fontSize:'1.2em', letterSpacing:'.3em', color: 'lightseagreen'}}>
+                <Zoom right cascade>
+                    A Selection of Stuff I've Built
+                </Zoom> 
+            </p>
             <div class="container text-center">
                 <div class="row">
                     <div class="col-sm-5 col-md-6">

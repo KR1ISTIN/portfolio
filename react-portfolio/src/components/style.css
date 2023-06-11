@@ -20,12 +20,28 @@
     -webkit-text-fill-color: transparent;
 }
 
-.projectTitle {
-    color:pink;
-     padding-right:70%;
-     letter-spacing:.1em
-}
 
+
+.projectTitle  {
+  padding-right:70%;
+  letter-spacing:.1em;
+  color:pink;
+  background-color: rgb(215, 200, 181, 0);
+  position: relative;
+  z-index: 0;
+  text-decoration: none;
+  }
+  
+  .projectTitle:before {
+      background-color: rgb(252, 252, 247, 0.3);
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 80%;
+      z-index: -50;
+      bottom: 0;
+      transform: translate(20px, 0px);
+  }
 
     .linkProject {
       background-image: linear-gradient(
