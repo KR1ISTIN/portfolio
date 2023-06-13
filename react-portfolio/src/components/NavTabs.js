@@ -55,7 +55,6 @@ function NavTabs({currentPage, handlePageChange}) {
             </div>
         </div>
         </nav>
-
      </header>
 
 

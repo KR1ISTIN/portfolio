@@ -7,7 +7,7 @@ const styles = {
         width: '90%',       
         height: '82%',
         border: '2px solid lightseagreen',
-        //borderImage: 'linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1',
+        
     },
     hello: {
         background:'#22222B',
