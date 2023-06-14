@@ -3,15 +3,17 @@ import Bounce from 'react-reveal/Bounce';
 
 export default function About() {
   return (
-    <div style={{background:'#22222B'}}>
+    <div style={{background:'#22222B', height:"100vh"}}>
         <h1 style={{color:'white', letterSpacing:'.2em', padding:'1em'}}>
             <Bounce right cascade>
             About
             </Bounce>
         </h1>
     <div style={{color:'white'}}class="container text-center">
+    <div className='animate-charcter'>Stay Positive, WORK hard, make IT happen</div>
         <div class="row">
             <div style={{ paddingRight:'35%', fontSize:'1.5em',}}class="col-sm-5 col-md-6">Who Is Kristin?</div>
+            
             <div style={{ padding: '8% 0 3% 0', color:'lightseagreen', fontSize:'2.7em'}}class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">A curiosity-driven Front-End Developer with design chops</div>
         </div>
         <div class="row">
