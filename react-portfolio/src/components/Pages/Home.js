@@ -13,7 +13,7 @@ const styles = {
         background:'#22222B',
     },
     welcome: {
-        fontSize: '3em',
+        fontSize: '2em',
         letterSpacing: '.2em',
         color:'lightseagreen'
     }
@@ -22,7 +22,7 @@ const styles = {
 export default function Home() {
 
   return (
-    <div style={{background: '#22222B'}}>
+    <div style={{background:'#22222B', height:'100vh'}}>
         <div class="container text-center">
             <div  class="row justify-content-start">
                 <div style={styles.welcome} class="col-4">
