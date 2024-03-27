@@ -18,6 +18,27 @@ export default function Projects() {
                 <div class="row">
                     <div class="col-sm-5 col-md-6">
                         <div style={{ paddingTop:'10%'}}class='container'>
+                            <h4 className='projectTitle'>Yard Gems</h4>
+                            <p className='projectText'>
+                            This project emcomposes the MERN Stack allowing the user to search for yard sells in a particular area. This group project included: 
+                            <a href='https://github.com/Rolyat512'> Taylor Aldridge</a> and <a href='https://github.com/Omar4589'>Omar Zumaya</a> 
+                            </p>
+                            <div>
+                                <a className='linkProject' href='https://yardgems-15b0faee737f.herokuapp.com/'>View project</a>
+                                <a  className='linkProject' href='https://github.com/Omar4589/YardGems'>View repo</a>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                        <img className='gitFoodPic'src='./assets/yard.png'></img>
+                    </div>
+                </div> 
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-5 col-md-6">
+                        <div style={{ paddingTop:'10%'}}class='container'>
                             <h4 className='projectTitle'>GitFood.Travel</h4>
                             <p className='projectText'>
                             For when you need a quick look up for the top restuarants and hotels in the city, this is your go to app for seconds away from a luxurious meal or hotel. This group project included: 
@@ -51,7 +72,7 @@ export default function Projects() {
                        
                     </div>
                     <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-                        <img className='gitFoodPic'src='./assets/gitFoodTravel.png'></img>
+                        <img className='gitFoodPic'src='./assets/weather.png'></img>
                     </div>
                 </div> 
             </div>
@@ -71,7 +92,7 @@ export default function Projects() {
                        
                     </div>
                     <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-                        <img className='gitFoodPic'src='./assets/gitFoodTravel.png'></img>
+                        <img className='gitFoodPic'src='./assets/password.png'></img>
                     </div>
                 </div> 
             </div>
@@ -91,7 +112,7 @@ export default function Projects() {
                        
                     </div>
                     <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-                        <img className='gitFoodPic'src='./assets/gitFoodTravel.png'></img>
+                        <img className='gitFoodPic'src='./assets/workDay.png'></img>
                     </div>
                 </div> 
             </div>
@@ -111,7 +132,7 @@ export default function Projects() {
                        
                     </div>
                     <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-                        <img className='gitFoodPic'src='./assets/gitFoodTravel.png'></img>
+                        <img className='gitFoodPic'src='./assets/employee.png'></img>
                     </div>
                 </div> 
             </div>
@@ -133,7 +154,7 @@ export default function Projects() {
                        
                     </div>
                     <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-                        <img className='gitFoodPic'src='./assets/gitFoodTravel.png'></img>
+                        <img className='gitFoodPic'src='./assets/mealMappr.png'></img>
                     </div>
                 </div> 
             </div>

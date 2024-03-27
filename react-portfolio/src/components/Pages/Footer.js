@@ -15,9 +15,9 @@ export default function Footer(){
                             <div class="col">
                                 <a style={{color:'black', textDecoration:'none',fontSize:'1.3em'}} href='#'>LinkedIn</a>
                             </div>
-                            <div class="col">
+                            {/* <div class="col">
                                 <a style={{color:'black', textDecoration:'none',fontSize:'1.3em'}}href='#'>Twitter</a>
-                            </div>
+                            </div> */}
                         </div>
                         </div>
                     </div>

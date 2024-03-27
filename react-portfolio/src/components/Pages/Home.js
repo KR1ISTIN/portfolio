@@ -43,11 +43,11 @@ export default function Home() {
                       |  Full Stack Web Developer |
                     </h5>
                     <p style={{color:'white',lineHeight:'2em'}}>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod
+                    A Dental Hygienist inspiring to be a Backend Developer 
                     </p>
                 </div>
                 <div class="col-4" style={{padding: '10% 0 0 10%', background:'linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1'}}>
-                    <img src='photo.png' alt='picture' style={styles.img}></img>
+                    <img src='./assets/photo.png' alt='picture' style={styles.img}></img>
                 </div>
             </div>
             

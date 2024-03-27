@@ -40,9 +40,9 @@ const styles = {
 export default function Resume() {
   return (
   <div style={{background:'#22222B' }}>
-    <div style={{padding:'2%', display:'flex', justifyContent:'center'}}>
+    {/* <div style={{padding:'2%', display:'flex', justifyContent:'center'}}>
       <button className='linkProject'>Download Resume</button>
-    </div>
+    </div> */}
     <div style={{background:'	#FAF9F6'}}class="container">
       <div class="row">
         <div style={styles.resumeHeader}class="col-12">
@@ -54,7 +54,7 @@ export default function Resume() {
               <a style={styles.contact} href='#'>LinkedIn</a>
             </div>
             <div class="row">
-              <a style={styles.contact} href='#'>kristin.desalme@gmail.com</a>
+              <a style={styles.contact} href='mailto:kristin.desalme@gmail.com'>kristin.desalme@gmail.com</a>
             </div>
           </div>
           <div class="d-flex flex-row-reverse">
@@ -66,43 +66,47 @@ export default function Resume() {
           <h5 style={styles.resumeTitles}>
             Skills
           </h5>
-            <div style={{padding:'1em'}}class="container text-center">
+            <div style={{padding:'.5em'}}class="container text-center">
               <div  class="row">
                 <div class="col">Html</div>
                 <div class="col">Css</div>
                 <div class="col">Javascript</div>
+                <div class="col">Squealize</div>
               </div>
               <div class="row">
-                <div class="col">React.js</div>
-                <div class="col">Node.js</div>
-                <div class="col">Express.js</div>
+                <div class="col">React</div>
+                <div class="col">Node</div>
+                <div class="col">Express</div>
+                <div class="col">NoSQL</div>
               </div>
               <div class="row">
                 <div class="col">GQL</div>
-                <div class="col">Bootstrap</div>
+                <div class="col">SQL</div>
                 <div class="col">jQuery</div>
+                <div class="col">OOP</div>
               </div>
               <div class="row">
-                <div class="col">MySQL</div>
-                <div class="col">Squealize</div>
+                <div class="col">Sequelize</div>
+                <div class="col">Mongoose</div>
                 <div class="col">MongoDB</div>
               </div>
               <div class="row">
                 <div class="col">Git</div>
-                <div class="col">Command Line</div>
+                <div class="col">Handlebars</div>
                 <div class="col">PWA</div>
+                <div class="col">MVC</div>
               </div>
             </div>   
-          <h5 style={styles.resumeTitles}>
+          {/* <h5 style={styles.resumeTitles}>
             Techincal Skills
           </h5>
             <div style={{padding:'1em'}} class="container text-center">
               <div class="row">
                 <div class="col">Express.js</div>
-                <div class="col">React.js</div>
+                <div class="col">Node</div>
                 <div class="col">Javascript</div>
               </div>
-            </div>
+            </div> */}
             <h5 style={styles.resumeTitles}>
               Education
             </h5>
@@ -120,7 +124,7 @@ export default function Resume() {
         <div class="col-6">
           <h5 style={styles.resumeTitles}>Work</h5>
             <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod.
+            As a backend developer and dental hygienist of seven years, I bring a unique blend of skills, adaptability, and willingness to learn. The transition from oral health care to programming may seem unexpected, but I thrive on challenges, and web development provides the perfect canvas for me to learn and grow every day. I look forward to contributing my diverse experiences and enthusiasm to a new team and making a meaningful impact in the field.
             </p>
             <h5 style={styles.resumeTitles}>
               Projects
