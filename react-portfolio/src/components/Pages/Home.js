@@ -37,7 +37,7 @@ export default function Home() {
                         H E L L O, 
                     </h5>
                     <h2 style={{color:'white',lineHeight:'2em'}}>
-                        I'm Kristin De Salme 
+                    I'm Kristin De Salme 
                     </h2>
                     <h5 style={{color:'lightseagreen',lineHeight:'1.8em'}}>
                       |  Full Stack Web Developer |
