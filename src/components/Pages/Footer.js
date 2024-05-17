@@ -13,7 +13,7 @@ export default function Footer(){
                                 <a style={{color:'black', textDecoration:'none', fontSize:'1.3em'}}href='https://github.com/KR1ISTIN'>Github</a>
                             </div>
                             <div class="col">
-                                <a style={{color:'black', textDecoration:'none',fontSize:'1.3em'}} href='#'>LinkedIn</a>
+                                <a style={{color:'black', textDecoration:'none',fontSize:'1.3em'}} href='https://www.linkedin.com/in/kristin-desalme/'>LinkedIn</a>
                             </div>
                             {/* <div class="col">
                                 <a style={{color:'black', textDecoration:'none',fontSize:'1.3em'}}href='#'>Twitter</a>

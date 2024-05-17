@@ -4,8 +4,8 @@ import './style.css';
 
 function NavTabs({currentPage, handlePageChange}) {
     return (
-     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <header style={{background:'pink'}}>
+        <nav class="navbar navbar-expand-lg bg-body-pink">
         <div class="container-fluid">
       
             <a class="navbar-brand" href="#home"
@@ -44,13 +44,13 @@ function NavTabs({currentPage, handlePageChange}) {
                     </a>
                 </li>
                 
-                <li class="nav-item">
+                {/* <li class="nav-item">
                     <a class="nav-link" href="#contact"
                      onClick={() => handlePageChange('Contact')}
                      className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
                     >Contact
                     </a>
-                </li>
+                </li> */}
             </ul>
             </div>
         </div>

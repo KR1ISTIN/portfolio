@@ -38,6 +38,27 @@ export default function Projects() {
             <div class="container text-center">
                 <div class="row">
                     <div class="col-sm-5 col-md-6">
+                        <div style={{paddingTop:'10%'}}class='container'>
+                            <h4 className='projectTitle'>Meal Mappr</h4>
+                            <p className='projectText'>
+                            Meal Mappr, a FullStack project, is a meal planning website where you can view a calendar and create your very own meal plan from scratch.
+                            This was a group  project that included: 
+                             <a href='https://github.com/Rolyat512'> Taylor Aldridge</a> and <a href='https://github.com/Omar4589'>Omar Zumaya</a> 
+                            </p>
+                            <div>
+                                <a  className='linkProject'href='https://mealmappr.herokuapp.com/'>View project</a>
+                                <a  className='linkProject'href='https://github.com/Rolyat512/MealMappr'>View repo</a>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                        <img className='gitFoodPic'src='./assets/mealMappr.png'></img>
+                    </div>
+                </div> 
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-5 col-md-6">
                         <div style={{ paddingTop:'10%'}}class='container'>
                             <h4 className='projectTitle'>GitFood.Travel</h4>
                             <p className='projectText'>
@@ -136,27 +157,7 @@ export default function Projects() {
                     </div>
                 </div> 
             </div>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-sm-5 col-md-6">
-                        <div style={{paddingTop:'10%'}}class='container'>
-                            <h4 className='projectTitle'>Meal Mappr</h4>
-                            <p className='projectText'>
-                            Meal Mappr is a meal planning website where you can view a calendar and create your very own meal plan from scratch.
-                            This was a group  project that included: 
-                             <a href='https://github.com/Rolyat512'> Taylor Aldridge</a> and <a href='https://github.com/Omar4589'>Omar Zumaya</a> 
-                            </p>
-                            <div>
-                                <a  className='linkProject'href='https://mealmappr.herokuapp.com/'>View project</a>
-                                <a  className='linkProject'href='https://github.com/Rolyat512/MealMappr'>View repo</a>
-                            </div>
-                        </div>
-                       
-                    </div>
-                    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-                        <img className='gitFoodPic'src='./assets/mealMappr.png'></img>
-                    </div>
-                </div> 
+   
             </div>
         </div>
     </div>

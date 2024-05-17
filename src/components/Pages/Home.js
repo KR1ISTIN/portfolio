@@ -3,7 +3,7 @@ import Roll from 'react-reveal/Roll';
 
 const styles = {
     img: {
-        borderRadius: '50%',
+        
         width: '90%',       
         height: '82%',
         border: '2px solid lightseagreen',
@@ -13,8 +13,9 @@ const styles = {
         background:'#22222B',
     },
     welcome: {
-        fontSize: '2em',
-        letterSpacing: '.2em',
+        paddingTop:'2em',
+        fontSize: '2.5em',
+        letterSpacing: '.5em',
         color:'lightseagreen'
     }
 }
@@ -40,10 +41,10 @@ export default function Home() {
                     I'm Kristin De Salme 
                     </h2>
                     <h5 style={{color:'lightseagreen',lineHeight:'1.8em'}}>
-                      |  Full Stack Web Developer |
+                      |  FullStack Web Developer |
                     </h5>
                     <p style={{color:'white',lineHeight:'2em'}}>
-                    A Dental Hygienist inspiring to be a Backend Developer 
+                    Just Trying To Squash One Bug At A Time
                     </p>
                 </div>
                 <div class="col-4" style={{padding: '10% 0 0 10%', background:'linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1'}}>
