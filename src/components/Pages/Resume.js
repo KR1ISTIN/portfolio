@@ -1,151 +1,219 @@
-import React from 'react';
-import '../style.css';
+import React from "react";
+import "../style.css";
 
 const styles = {
- 
   resumeHeader: {
-    background:'linear-gradient(rgba(72, 213, 206, 0.719), rgb(241, 232, 232)'
+    background: "linear-gradient(rgba(72, 213, 206, 0.719), rgb(241, 232, 232)",
   },
   contact: {
-    textDecoration:'none',
-    color: '#22222B',
-    padding:'.2em',
-    fontWeight:'bold'
+    textDecoration: "none",
+    color: "#22222B",
+    padding: ".2em",
+    fontWeight: "bold",
   },
   resumeName: {
-    color:'#22222B',
-    letterSpacing:'.4em'
+    color: "#22222B",
+    letterSpacing: ".4em",
   },
-  resumeTitles: {
-    paddingTop:'1em',
-    letterSpacing:'.2em',
-    textDecoration:'underline'
-  },
-  resumeEdu: {
-    fontWeight:'bold',
-    fontSize: '.9em',
-    padding:'.5em'
-  },
-  projectSection: {
-    marginTop:'1em',
-    padding:'.6em',
-    fontWeight:'bold',
-    fontSize: '.9em',
-    letterSpacing:'.15em'
-  },
- 
- 
-}
+  
+};
+
+//// THIS IS YOUR RESUME BUTTON CLICK ITEM \\\\
+const onButtonClick = () => {
+  const pdfUrl = "./assets/KristinDeSalme_Resume_24.pdf";
+  const link = document.createElement("a");
+  link.href = pdfUrl;
+  link.download = "KristinDeSalme_Resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+//// THIS IS YOUR RESUME BUTTON CLICK ITEM \\\\
+
+//// THIS IS YOUR RESUME DISPLAY FUNCTION \\\\
+// Function will execute on click of button
+const onButtonClickFetch = () => {
+  // using Java Script method to get PDF file
+  fetch("./assets/KristinDeSalme_Resume_24.pdf").then((response) => {
+    response.blob().then((blob) => {
+      // Creating new object of PDF file
+      const fileURL = window.URL.createObjectURL(blob);
+      console.log(fileURL)
+      // Setting various property values
+      let alink = document.createElement("a");
+      alink.href = fileURL;
+      // alink.download = "KristinDeSalme_Resume.pdf";
+      alink.target = '_blank';
+      alink.click();
+    });
+  });
+};
+///// THIS IS YOUR RESUME DISPLAY FUNCTION \\\\\
 
 export default function Resume() {
   return (
-  <div style={{background:'#22222B' }}>
-    {/* <div style={{padding:'2%', display:'flex', justifyContent:'center'}}>
+    <div style={{ background: "#22222B" }}>
+      {/* <div style={{padding:'2%', display:'flex', justifyContent:'center'}}>
       <button className='linkProject'>Download Resume</button>
     </div> */}
-    <div style={{background:'	#FAF9F6'}}class="container">
-      <div class="row">
-        <div style={styles.resumeHeader}class="col-12">
-          <div class="container">
-            <div class="row">
-              <a style={styles.contact} href='#'>Github: KR1ISTIN</a>
-            </div>
-            <div class="row">
-              <a style={styles.contact} href='#'>LinkedIn</a>
-            </div>
-            <div class="row">
-              <a style={styles.contact} href='mailto:kristin.desalme@gmail.com'>kristin.desalme@gmail.com</a>
-            </div>
-          </div>
-          <div class="d-flex flex-row-reverse">
-            <h3 style={styles.resumeName}>Kristin De Salme</h3>
-          </div>
-          <h5 style={{textAlign:'end', letterSpacing:'.1em'}}>Full Stack Web Developer</h5>
-        </div>
-        <div class="col-4">
-          <h5 style={styles.resumeTitles}>
-            Skills
-          </h5>
-            <div style={{padding:'.5em'}}class="container text-center">
-              <div  class="row">
-                <div class="col">Html</div>
-                <div class="col">Css</div>
-                <div class="col">Javascript</div>
-                <div class="col">Squealize</div>
-              </div>
-              <div class="row">
-                <div class="col">React</div>
-                <div class="col">Node</div>
-                <div class="col">Express</div>
-                <div class="col">NoSQL</div>
-              </div>
-              <div class="row">
-                <div class="col">GQL</div>
-                <div class="col">SQL</div>
-                <div class="col">jQuery</div>
-                <div class="col">OOP</div>
-              </div>
-              <div class="row">
-                <div class="col">Sequelize</div>
-                <div class="col">Mongoose</div>
-                <div class="col">MongoDB</div>
-              </div>
-              <div class="row">
-                <div class="col">Git</div>
-                <div class="col">Handlebars</div>
-                <div class="col">PWA</div>
-                <div class="col">MVC</div>
-              </div>
-            </div>   
-          {/* <h5 style={styles.resumeTitles}>
-            Techincal Skills
-          </h5>
-            <div style={{padding:'1em'}} class="container text-center">
-              <div class="row">
-                <div class="col">Express.js</div>
-                <div class="col">Node</div>
-                <div class="col">Javascript</div>
-              </div>
-            </div> */}
-            <h5 style={styles.resumeTitles}>
-              Education
-            </h5>
-            <div style={{padding:'1em'}} class="container">
-              <div class="row">
-                <div style={styles.resumeEdu} class="col-12">UTSA July 2023</div>
-                <div class="col-12">Full Stack Web Development Bootcamp</div>
-                <div style={styles.resumeEdu}class="col-12">Concorde Career College April 2017</div>
-                <div class="col-12">Dental Hygiene</div>
-                <div style={styles.resumeEdu}class="col-12">Concorde Career College 2014 </div>
-                <div class="col-12">Dental Assistant</div>
-              </div>
-            </div>
-        </div>
-        <div class="col-6">
-          <h5 style={styles.resumeTitles}>Work</h5>
-            <p>
-            As a backend developer and dental hygienist of seven years, I bring a unique blend of skills, adaptability, and willingness to learn. The transition from oral health care to programming may seem unexpected, but I thrive on challenges, and web development provides the perfect canvas for me to learn and grow every day. I look forward to contributing my diverse experiences and enthusiasm to a new team and making a meaningful impact in the field.
-            </p>
-            <h5 style={styles.resumeTitles}>
-              Projects
-            </h5>
+      {/* THIS IS YOUR RESUME BUTTON CLICK ITEM */}
+      <div style={{display:'flex', justifyContent:'center'}}  id="resumeDownload">
+        <button className='linkProject'onClick={onButtonClick} id="resumeButton">
+          Download Resume
+        </button>
+      </div>
+      {/* THIS IS YOUR RESUME BUTTON CLICK ITEM */}
+
+      
+      <div style={{ background: "	#FAF9F6" }} class="container">
+        <div class="row">
+          <div style={styles.resumeHeader} class="col-12">
             <div class="container">
               <div class="row">
-                <div style={styles.projectSection}class="col-12">GitFood.Travel</div>
-                <div class="col-12">GitFood.Travel was designed for a traveler looking to find the most luxurious hotels and restaurants in any city. This project was group based group and sharpen our communication skills, resolving merge confilcts and practice working in a agile enviroment.</div>
-                <div class="col-12"><a href='https://kr1istin.github.io/GIT-FOOD.Travel/'>https://kr1istin.github.io/GIT-FOOD.Travel/</a></div>
+                <a style={styles.contact} target='_blank' href="https://github.com/KR1ISTIN">
+                  Github: KR1ISTIN
+                </a>
+              </div>
+              <div class="row">
+                <a style={styles.contact}target='_blank' href="https://www.linkedin.com/in/kristin-desalme/">
+                  LinkedIn
+                </a>
+              </div>
+              <div class="row">
+                <a
+                  style={styles.contact}
+                  href="mailto:kristin.desalme@gmail.com"
+                >
+                  kristin.desalme@gmail.com
+                </a>
               </div>
             </div>
-            <div class="container">
-              <div class="row">
-                <div style={styles.projectSection}class="col-12">Meal Mappr</div>
-                <div class="col-12">Meal Mappr is a app for a user to use all CRUD methods planning out their meals for the the month,day, or week. MySQL, Tailwind, Full Calender.js and Bycrpt were implemented</div>
-                <div class="col-12"><a href='https://mealmappr.herokuapp.com'>https://mealmappr.herokuapp.com</a></div>
+            <div class="d-flex flex-row-reverse">
+              <h3 style={styles.resumeName}>Kristin De Salme</h3>
+            </div>
+            <h5 style={{ textAlign: "end", letterSpacing: ".1em" }}>
+              Full Stack Web Developer
+            </h5>
+          </div>
+
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-sm-12">As a FullStack developer and dental hygienist, I offer excellent communication and teamwork skills, along with a keen eagerness and willingness to learn on this journey. The transition from oral health care to programming may seem unexpected, but I thrive on challenges, and web development provides the perfect canvas. I look forward to contributing my diverse experiences and enthusiasm to a new team and making a meaningful impact in the field.</div>
+          
+            </div>
+            <h5 style={{padding:'1em',letterSpacing:'.5em'}}>Techincal Skills</h5>
+            <div class="row">
+              <div class="col-sm-12"><strong>Languages:</strong> Java, JavaScript, SQL, HTML5, BASH</div>
+              <p /> 
+              <div class="col-sm-12"><strong>Frameworks/Libraries: </strong>Spring, Spring Boot, Spring Security, Node.js, Express.js, React, Handlebars, Bootstrap, MaterialUI, Bulma, Tailwind</div>
+              <p />
+              <div class="col-sm-12"><strong>Databases:</strong> PostGresQL, MySQL, NoSQL, MongoDB, Sequelize, Mongoose <br /></div>
+              <p />
+              <div class="col-sm-12"><strong>Tools/Technologies: </strong>RESTful APIs, Maven, Docker, Microservices, JWT, Auth0, OAuth2, Bycrpt, GraphQL, Jest, Object-oriented programming, Heroku, Git, IntelliJ, pgAdmin4, MySQL Workbench, MVC Pattern<br /></div>
+              <p />
+              <div class="col-sm-12"><strong>Project Management:</strong> Team Collaboration, Communication, Agile Development, Scrum, Sprint, Kanban, Jira, Github Projects, Wireframming, GithubActions CI/DC Pipeline</div>
+              <p />
+              <div class="col-sm-12"><strong>AWS:</strong> IAM, ECS, Elastic Beanstalk, AWS RDS, S3</div></div>
+            
+            <h5 style={{paddingTop:'1em', letterSpacing:'.5em'}}>Experience</h5>
+            <div class="row">
+              <div style={{padding:'1em'}}class="col-sm-12"> <strong>ARP Roofing and Remodeling: Backend Developer <br />2024-Present<br /></strong>Contracted to create an app that is a central source for customer related data. 
+                <div style={{paddingTop:'1em'}}class="row">
+                  <div class="col-sm-4"><strong>Key Accomplishments:</strong></div>
+                  <div class="col-sm-8">
+                    <ul style={{textAlign:'start'}}>
+                        <li>
+                        <em>Reduced</em> latency in lead creation by enabling sales reps to quickly input leads on the go
+                        </li>
+                        <li>
+                        <em>Effectively</em> created a central customer MySQL database with access for customer manipulation
+                        </li>
+                        <li>
+                        <em>Reduced operational debt</em> by integrating multiple systems together
+                        </li>
+                        <li>
+                        <em>Successfully</em> implemented user authentication with Bycrpt, JWT, Sessions, Auth0, OAuth2
+                        </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
+            </div>
+          
+            <div class="row">
+              <div style={{padding:'1em'}}class="col-sm-12"> <strong>HelloCure: FullStack Developer <br />2023-Present<br /></strong>Volunteering to help a childhood cancer nonprofit. Built a key-single page featuring update operations, database consultation and implementation, and mentoring in Git versioning control,  and maintenance in code base. 
+                <div style={{paddingTop:'1em'}}class="row">
+                  <div class="col-sm-4"><strong>Key Accomplishments:</strong></div>
+                  <div class="col-sm-8">
+                    <ul style={{textAlign:'start'}}>
+                        <li>
+                        <em>Collaborated</em> with team to refine database architecture, ensuring <em>efficiency</em>
+                        </li>
+                        <li>
+                        <em>Successfully</em> trained my partner in Git versioning control, fostering <em>collaborative</em> and efficient development environments
+                        </li>
+                        <li>
+                        <em>Successfully</em> implemented Update operations using Django and Python for user implementation
+                        </li>
+                        <li>
+                        <em>Enhancing</em> cleanliness in code base by addressing errors, will be adding test units
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h5 style={{padding:'1em', letterSpacing:'.5em'}}>Projects</h5>
+            <div class="row">
+            <div class="col-sm-12"> <h6><strong>Yard Gems</strong><br></br><a style={{color:'black'}}href='https://yardgems-15b0faee737f.herokuapp.com/'>Project Link</a><br></br><a style={{color:'black'}} href='https://github.com/Omar4589/YardGems'> Github Link</a>
+              <br />A team project, utilizing the MERN Stack. Allowing users to search and post garage sales</h6>
+              <div class="row">
+                <div class="col-sm-4"><strong>Role: FullStack Development and Project Management</strong>	Implemented React Google Maps API, Models, GraphQL, Routes for CRUD 	
+                  both front and backend, secure Login/Logout functionality, partial implementation UI design, Scrum Master</div>
+                <div class="col-sm-8">	
+                  <strong>Tools/Technologies:</strong> React, React Router DOM, Heroku, Mongoose, JavaScript,
+                  React Google Maps API, GraphQL, MaterialUI, Express.js, Node.js, Apollo
+                  Server, JWT, Bycrpt, HTML, CSS, Team Collaboration, Agile Development,
+                  Kanban, Scrum, Paired Programming, Git, Github Projects, Wireframe
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="row">
+          <div class="col-sm-12"> <h6><strong>Meal Mappr</strong><br></br><a style={{color:'black'}} href='https://mealmappr.herokuapp.com/'>Project Link</a><br></br><a style={{color:'black'}}href='https://github.com/Rolyat512/MealMappr'> Github Link</a>
+            <br></br>MealMappr, a team project, that allows access for users to manage their personalized meal plans
+            </h6>
+            <div class="row">
+              <div class="col-sm-4"><strong>Role: FullStack Development and Project Management</strong>	Implemented Models, Routes for CRUD both front and backend, Login/Logout 				functionality , Scrum Master, UI design for modals </div>
+              <div class="col-sm-8">	
+                <strong>Tools/Technologies:</strong> Heroku, HTML, JavaScript, Node, Express, Sequelize, 			Handlebars, TailWind, Full Calendar, Bycrpt, Team Collaboration, Agile 			Development, KanBan, Scrum, Paired Programming, Git, Github Projects, 			Wireframe 
+              </div>
+            </div>
+          </div>
+          </div>
+          <h5 style={{padding:'1em', letterSpacing:'.5em'}}>Education</h5>
+          <div class="row">
+            <div style={{paddingBottom:'1.5em'}}class="col-sm-12"><h6>Certificate, Master Java, Spring 6 and Spring Boot 3 with JDBC, JPA, 
+            Security, Docker and Microservices with Telusko</h6>
+          A 42-hour course in mastering Java, Spring, Spring Boot, JPA, AOP, with the addition of Docker and Microservices<br /> May 2024
             </div> 
+            <div style={{paddingBottom:'1.5em'}}class="col-sm-12"><h6>Certificate, FullStack Web Development: UTSA </h6>
+            A 24-week, project driven course, in FullStack JavaScript Web Development/MERN STACK
+            <br></br> July 2023
+            </div>
+            <div style={{paddingBottom:'1.5em'}}class="col-sm-12"><h6>Associate, Dental Hygiene: Concorde Career College</h6>
+              A 18-month accelerated program, focusing on oral hygiene and clinical care
+              <br></br> April 2017
+            </div>
+          </div>
+        </div>
+    
+        
+          
         </div>
       </div>
     </div>
-  </div>
-  )
+  );
 }
