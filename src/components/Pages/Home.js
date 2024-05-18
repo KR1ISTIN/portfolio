@@ -4,7 +4,6 @@ import Roll from 'react-reveal/Roll';
 const styles = {
     img: {
         width: 'auto',       
-        height: 'auto',
         border: '2px solid lightseagreen',
         
     },
@@ -51,7 +50,9 @@ export default function Home() {
                 </div>
                 <div class="col-sm">
                     <div class="col-4" style={{padding: '10% 0 0 10%', background:'linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1'}}>
-                        <img src='./assets/photo.png' alt='picture' style={styles.img}></img>
+                        <div>
+                            <img src='./assets/photo.png' alt='picture' style={styles.img}></img>
+                        </div>
                     </div>
                 </div>
             </div>
