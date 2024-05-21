@@ -93,7 +93,7 @@ export default function Resume() {
             <div class="row">
               <div style={{padding:'1em'}}class="col-sm-12"> <strong>ARP Roofing and Remodeling: Backend Developer <br />2024-Present<br /></strong>Contracted to create an app that is a central source for customer related data. 
                 <div style={{paddingTop:'1em'}}class="row">
-                  <div class="col-sm-4"><strong>Key Accomplishments:</strong></div>
+                  <div class="col-sm-4"><strong>Key Accomplishments/In Progess:</strong></div>
                   <div class="col-sm-8">
                     <ul style={{textAlign:'start'}}>
                         <li>
@@ -102,12 +102,12 @@ export default function Resume() {
                         <li>
                         <em>Effectively</em> created a central customer MySQL database with access for customer manipulation
                         </li>
-                        {/* <li> */}
-                        {/* <em>Reduced operational debt</em> by integrating multiple systems together
+                         <li> 
+                         <em>Reducing operational debt</em> by integrating multiple systems together
                         </li>
                         <li>
-                        <em>Successfully</em> implemented user authentication with Bycrpt, JWT, Sessions, OAuth2
-                        </li> */}
+                        <em>Implenting</em>user authentication with Bycrpt, JWT, Sessions, OAuth2
+                        </li> 
                     </ul>
                   </div>
                 </div>
