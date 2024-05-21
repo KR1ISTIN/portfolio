@@ -18,7 +18,6 @@ const styles = {
   
 };
 
-//// THIS IS YOUR RESUME BUTTON CLICK ITEM \\\\
 const onButtonClick = () => {
   const pdfUrl = "./assets/KristinDeSalme_Resume_24.pdf";
   const link = document.createElement("a");
@@ -28,27 +27,6 @@ const onButtonClick = () => {
   link.click();
   document.body.removeChild(link);
 };
-//// THIS IS YOUR RESUME BUTTON CLICK ITEM \\\\
-
-//// THIS IS YOUR RESUME DISPLAY FUNCTION \\\\
-// Function will execute on click of button
-const onButtonClickFetch = () => {
-  // using Java Script method to get PDF file
-  fetch("./assets/KristinDeSalme_Resume_24.pdf").then((response) => {
-    response.blob().then((blob) => {
-      // Creating new object of PDF file
-      const fileURL = window.URL.createObjectURL(blob);
-      console.log(fileURL)
-      // Setting various property values
-      let alink = document.createElement("a");
-      alink.href = fileURL;
-      // alink.download = "KristinDeSalme_Resume.pdf";
-      alink.target = '_blank';
-      alink.click();
-    });
-  });
-};
-///// THIS IS YOUR RESUME DISPLAY FUNCTION \\\\\
 
 export default function Resume() {
   return (
@@ -56,14 +34,11 @@ export default function Resume() {
       {/* <div style={{padding:'2%', display:'flex', justifyContent:'center'}}>
       <button className='linkProject'>Download Resume</button>
     </div> */}
-      {/* THIS IS YOUR RESUME BUTTON CLICK ITEM */}
       <div style={{display:'flex', justifyContent:'center'}}  id="resumeDownload">
         <button className='linkProject'onClick={onButtonClick} id="resumeButton">
           Download Resume
         </button>
       </div>
-      {/* THIS IS YOUR RESUME BUTTON CLICK ITEM */}
-
       
       <div style={{ background: "	#FAF9F6" }} class="container">
         <div class="row">
