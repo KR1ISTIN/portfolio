@@ -74,7 +74,6 @@ export default function Resume() {
           <div class="container text-center">
             <div class="row">
               <div class="col-sm-12">As a FullStack developer and dental hygienist, I offer excellent communication and teamwork skills, along with a keen eagerness and willingness to learn on this journey. The transition from oral health care to programming may seem unexpected, but I thrive on challenges, and web development provides the perfect canvas. I look forward to contributing my diverse experiences and enthusiasm to a new team and making a meaningful impact in the field.</div>
-          
             </div>
             <h5 style={{padding:'1em',letterSpacing:'.5em'}}>Techincal Skills</h5>
             <div class="row">
@@ -103,12 +102,12 @@ export default function Resume() {
                         <li>
                         <em>Effectively</em> created a central customer MySQL database with access for customer manipulation
                         </li>
-                        <li>
-                        <em>Reduced operational debt</em> by integrating multiple systems together
+                        {/* <li> */}
+                        {/* <em>Reduced operational debt</em> by integrating multiple systems together
                         </li>
                         <li>
-                        <em>Successfully</em> implemented user authentication with Bycrpt, JWT, Sessions, Auth0, OAuth2
-                        </li>
+                        <em>Successfully</em> implemented user authentication with Bycrpt, JWT, Sessions, OAuth2
+                        </li> */}
                     </ul>
                   </div>
                 </div>

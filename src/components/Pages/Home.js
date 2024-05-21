@@ -11,6 +11,7 @@ const styles = {
     // width: '100%',
     height: windowWidth < 380 ? '25vh' : windowWidth < 768 ? '35vh' : '45vh',
     padding: windowWidth < 380 ? '0' : windowWidth < 768 ? '32px' : '32px',
+    marginBottom: windowWidth < 400 ? '-1.5em' : windowWidth < 830 ? '19em' : '2em',
   },
   hello: {
     background: "#22222B",
@@ -24,13 +25,13 @@ const styles = {
   },
   row: {
     justifyContent: "center",
-    padding: "1em",
+    padding: windowWidth < 400 ? '1em 0 0 0' : windowWidth < 830 ? '5em 0' : '3.5em 0',
   }
 };
 
 export default function Home() {
   return (
-    <div style={{ background: "#22222B", height: "100vh" }}>
+    <div style={{ background: "#22222B", height: "auto" }}>
       <div style={{ paddingTop: "12%" }} class="container text-center">
         <div style={styles.row} class="row" className="row">
           <div style={styles.welcome} class="col-sm-8">
