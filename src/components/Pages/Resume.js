@@ -113,7 +113,7 @@ export default function Resume() {
               </div>
               <p />
               <div class="col-sm-12">
-                <strong>Databases:</strong> PostGresQL, MySQL, NoSQL, MongoDB,
+                <strong>Databases:</strong> PostgreSQL, MySQL, NoSQL, MongoDB,
                 Sequelize, Mongoose <br />
               </div>
               <p />

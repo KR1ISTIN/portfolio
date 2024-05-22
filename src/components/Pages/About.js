@@ -16,7 +16,7 @@ export default function About() {
         <div class="row">
             <div style={{paddingRight:'35%', fontSize:'1.5em',}}class="col-sm-5 col-md-6">Who Is Kristin?
             </div>
-            <div style={{width: 'auto', padding: '8% 0 3% 0', color:'lightseagreen', fontSize:'2.7em'}}class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">A curiosity-driven FullStack Developer and with love of learning</div>
+            <div style={{width: 'auto', padding: '8% 0 3% 0', color:'lightseagreen', fontSize:'2.7em'}}class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">A curiosity-driven FullStack Developer with a love of learning</div>
         </div>
         <div class="row">
             <div style={{color:'lightseagreen', letterSpacing:'.2em'}}class="col-sm-6 col-md-5 col-lg-6">S K I L L S: <br></br>
@@ -26,7 +26,7 @@ export default function About() {
             <div style={{color:'pink'}}>Frameworks/Libraries: </div>Spring, Spring Boot, Spring Security, Node.js, Express.js, React, Handlebars, Bootstrap, MaterialUI, Bulma, Tailwind
             <br></br>
             <br></br>
-            <div style={{color:'pink'}}>Databases:</div> PostGresQL, MySQL, NoSQL, MongoDB, Sequelize, Mongoose
+            <div style={{color:'pink'}}>Databases:</div> PostgreSQL, MySQL, NoSQL, MongoDB, Sequelize, Mongoose
             <br></br>
             <br></br>
             <div style={{color:'pink'}}>Tools/Technologies:</div> RESTful APIs, Maven, Docker, Microservices, JWT, Auth0, OAuth2, Bycrpt, GraphQL, Jest, Object-oriented programming, Heroku, Git, IntelliJ, pgAdmin4, MySQL Workbench, MVC Pattern

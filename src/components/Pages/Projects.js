@@ -143,7 +143,7 @@ export default function Projects() {
                         <div style={{paddingTop:'10%'}}class='container'>
                             <h4 className='projectTitle'>Employee Tracker</h4>
                             <p className='projectText'>
-                            Employee Tracker was built for an example on how to use inquirer to gather data and use MYSQL2 to update a database. In addition, I furthered my understanding on how to implement the DRY method approach in coding along wtih creating a database, tables, and seeding the table.
+                            Employee Tracker was built for an example on how to use inquirer to gather data and use MySQL to update a database. In addition, I furthered my understanding on how to implement the DRY method approach in coding along wtih creating a database, tables, and seeding the table.
                             </p>
                             <div>
                                 <a  className='linkProject'href='https://drive.google.com/file/d/1FRFSvo0fj1orrfQNWA6Da8pnkuh8sndE/view'>View project</a>
