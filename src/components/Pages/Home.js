@@ -2,21 +2,20 @@ import React, { useEffect, useState } from "react";
 import Roll from "react-reveal/Roll";
 
 export default function Home() {
-
   const [windowWidth, setwindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {
       setwindowWidth(window.innerWidth);
     };
-  
+
     window.addEventListener("resize", handleResize);
-  
+
     return () => {
       window.addEventListener("resize", handleResize);
     };
   }, []);
-  
+
   const styles = {
     img: {
       width: "auto",
@@ -24,8 +23,9 @@ export default function Home() {
       // height: "45vh",
       // width: '100%',
       padding: "32px",
-      height: windowWidth < 380 ? "35vh" : windowWidth < 830 ? "35vh" : "45vh",
-      marginBottom: windowWidth < 400 ? "3em" : windowWidth < 830 ? "19em" : "2em",
+      height: windowWidth < 450 ? "35vh" : windowWidth < 850 ? "35vh" : "45vh",
+      marginBottom:
+        windowWidth < 450 ? "3em" : windowWidth < 850 ? "19em" : "2em",
     },
     hello: {
       background: "#22222B",
@@ -41,18 +41,17 @@ export default function Home() {
     row: {
       justifyContent: "center",
       padding:
-        windowWidth < 400 ? "2em 0" : windowWidth < 830 ? "5em 0" : "3.5em 0",
+        windowWidth < 450 ? "2em 0" : windowWidth < 850 ? "5em 0" : "3.5em 0",
     },
     divBackground: {
       background: "#22222B",
-      height: windowWidth < 400 ? "auto" : windowWidth < 830 ? "89vh" : "83vh",
-    }
+      height: windowWidth < 450 ? "auto" : windowWidth < 850 ? "89vh" : "83vh",
+    },
   };
-  
 
   return (
     <div style={styles.divBackground}>
-      <div style={{ paddingTop: "12%" }} class="container text-center">
+      <div class="container text-center">
         <div style={styles.row} class="row" className="row">
           <div style={styles.welcome} class="col-sm">
             <Roll left cascade>
