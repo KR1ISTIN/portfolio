@@ -20,22 +20,22 @@ export default function About() {
         </div>
         <div class="row">
             <div style={{color:'lightseagreen', letterSpacing:'.2em'}}class="col-sm-6 col-md-5 col-lg-6">S K I L L S: <br></br>
-            Languages: Java, JavaScript, SQL, HTML5, BASH
+            <div style={{color:'pink'}}>Languages:</div> Java, JavaScript, SQL, HTML5, BASH
             <br></br>
             <br></br>
-            Frameworks/Libraries: Spring, Spring Boot, Spring Security, Node.js, Express.js, React, Handlebars, Bootstrap, MaterialUI, Bulma, Tailwind
+            <div style={{color:'pink'}}>Frameworks/Libraries: </div>Spring, Spring Boot, Spring Security, Node.js, Express.js, React, Handlebars, Bootstrap, MaterialUI, Bulma, Tailwind
             <br></br>
             <br></br>
-            Databases: PostGresQL, MySQL, NoSQL, MongoDB, Sequelize, Mongoose
+            <div style={{color:'pink'}}>Databases:</div> PostGresQL, MySQL, NoSQL, MongoDB, Sequelize, Mongoose
             <br></br>
             <br></br>
-            Tools/Technologies: RESTful APIs, Maven, Docker, Microservices, JWT, Auth0, OAuth2, Bycrpt, GraphQL, Jest, Object-oriented programming, Heroku, Git, IntelliJ, pgAdmin4, MySQL Workbench, MVC Pattern
+            <div style={{color:'pink'}}>Tools/Technologies:</div> RESTful APIs, Maven, Docker, Microservices, JWT, Auth0, OAuth2, Bycrpt, GraphQL, Jest, Object-oriented programming, Heroku, Git, IntelliJ, pgAdmin4, MySQL Workbench, MVC Pattern
             <br></br>
             <br></br>
-            Project Management: Team Collaboration, Communication, Agile Development, Scrum, Sprint, Kanban, Jira, Github Projects, Wireframming, GithubActions CI/DC Pipeline
+            <div style={{color:'pink'}}>Project Management:</div> Team Collaboration, Communication, Agile Development, Scrum, Sprint, Kanban, Jira, Github Projects, Wireframming, GithubActions CI/DC Pipeline
             <br></br>
             <br></br>
-            AWS: IAM, ECS, Elastic Beanstalk, AWS RDS, S3
+            <div style={{color:'pink'}}>AWS: </div>IAM, ECS, Elastic Beanstalk, AWS RDS, S3
             <br></br>
             <br></br>
             </div>
