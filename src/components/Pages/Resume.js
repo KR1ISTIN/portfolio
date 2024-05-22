@@ -106,7 +106,7 @@ export default function Resume() {
                          <em>Reducing operational debt</em> by integrating multiple systems together
                         </li>
                         <li>
-                        <em>Implenting</em>user authentication with Bycrpt, JWT, Sessions, OAuth2
+                        <em>Implenting</em> user authentication with Bycrpt, JWT, Sessions, OAuth2, 
                         </li> 
                     </ul>
                   </div>
@@ -127,10 +127,10 @@ export default function Resume() {
                         <em>Successfully</em> trained my partner in Git versioning control, fostering <em>collaborative</em> and efficient development environments
                         </li>
                         <li>
-                        <em>Successfully</em> implemented Update operations using Django and Python for user implementation
+                        <em>Successfully</em> implemented RESTful APIs using Django and Python between HelloCure and Stripe
                         </li>
                         <li>
-                        <em>Enhancing</em> cleanliness in code base by addressing errors, will be adding test units
+                        <em>Enhancing</em> cleanliness in code base by addressing errors, with unit tests being added
                         </li>
                     </ul>
                   </div>

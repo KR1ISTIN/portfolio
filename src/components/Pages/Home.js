@@ -1,40 +1,60 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Roll from "react-reveal/Roll";
 
-const windowWidth = window.innerWidth;
-
-const styles = {
-  img: {
-    width: "auto",
-    border: "2px solid lightseagreen",
-    // height: "45vh",
-    // width: '100%',
-    height: windowWidth < 380 ? '25vh' : windowWidth < 768 ? '35vh' : '45vh',
-    padding: windowWidth < 380 ? '0' : windowWidth < 768 ? '32px' : '32px',
-    marginBottom: windowWidth < 400 ? '-1.5em' : windowWidth < 830 ? '19em' : '2em',
-  },
-  hello: {
-    background: "#22222B",
-    padding: "2em",
-  },
-  welcome: {
-    display: "flex",
-    fontSize: "2.1em",
-    letterSpacing: ".5em",
-    color: "lightseagreen",
-  },
-  row: {
-    justifyContent: "center",
-    padding: windowWidth < 400 ? '1em 0 0 0' : windowWidth < 830 ? '5em 0' : '3.5em 0',
-  }
-};
-
 export default function Home() {
+
+  const [windowWidth, setwindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setwindowWidth(window.innerWidth);
+    };
+  
+    window.addEventListener("resize", handleResize);
+  
+    return () => {
+      window.addEventListener("resize", handleResize);
+    };
+  }, []);
+  
+  const styles = {
+    img: {
+      width: "auto",
+      border: "2px solid lightseagreen",
+      // height: "45vh",
+      // width: '100%',
+      padding: "32px",
+      height: windowWidth < 380 ? "35vh" : windowWidth < 830 ? "35vh" : "45vh",
+      marginBottom: windowWidth < 400 ? "3em" : windowWidth < 830 ? "19em" : "2em",
+    },
+    hello: {
+      background: "#22222B",
+      padding: "2em",
+    },
+    welcome: {
+      display: "flex",
+      fontSize: "2.1em",
+      letterSpacing: ".5em",
+      color: "lightseagreen",
+      justifyContent: "center",
+    },
+    row: {
+      justifyContent: "center",
+      padding:
+        windowWidth < 400 ? "2em 0" : windowWidth < 830 ? "5em 0" : "3.5em 0",
+    },
+    divBackground: {
+      background: "#22222B",
+      height: windowWidth < 400 ? "auto" : windowWidth < 830 ? "89vh" : "83vh",
+    }
+  };
+  
+
   return (
-    <div style={{ background: "#22222B", height: "auto" }}>
+    <div style={styles.divBackground}>
       <div style={{ paddingTop: "12%" }} class="container text-center">
         <div style={styles.row} class="row" className="row">
-          <div style={styles.welcome} class="col-sm-8">
+          <div style={styles.welcome} class="col-sm">
             <Roll left cascade>
               Welcome
             </Roll>
