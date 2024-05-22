@@ -20,7 +20,7 @@ export default function Projects() {
                         <div style={{ paddingTop:'10%'}}class='container'>
                             <h4 className='projectTitle'>Yard Gems</h4>
                             <p className='projectText'>
-                            This project emcomposes the MERN Stack allowing the user to search for yard sells in a particular area. This group project included: 
+                            This project emcomposes the MERN Stack allowing the user to search for yard sales in a particular area. This group project included: 
                             <a href='https://github.com/Rolyat512'> Taylor Aldridge</a> and <a href='https://github.com/Omar4589'>Omar Zumaya</a> 
                             </p>
                             <div>
@@ -62,7 +62,7 @@ export default function Projects() {
                         <div style={{ paddingTop:'10%'}}class='container'>
                             <h4 className='projectTitle'>GitFood.Travel</h4>
                             <p className='projectText'>
-                            For when you need a quick look up for the top restuarants and hotels in the city, this is your go to app for seconds away from a luxurious meal or hotel. This group project included: 
+                            For when you need a quick search for the top restuarants and hotels in a city, this is your go to app for fine dining and comfort. This group project included: 
                             <a href='https://github.com/evohat3'> Nigel Poblete</a> and <a href='https://github.com/kaydubb10'>Kaileon Wallace</a> 
                             </p>
                             <div>
@@ -103,7 +103,7 @@ export default function Projects() {
                         <div style={{paddingTop:'10%'}}class='container'>
                             <h4 className='projectTitle'>Password Generator</h4>
                             <p className='projectText'>
-                            For when you need a quick a quick tool for generator the most secure password for any site. Simply specifiy the criteria you want it to meet and password will then be generated.
+                            For when you need a quick a quick tool for generatoring the most secure password for any site. Simply specifiy the criteria you want it to meet and the password will then be generated.
                             </p>
                             <div>
                                 <a  className='linkProject'href='https://kr1istin.github.io/Password-Generator/'>View project</a>
@@ -123,7 +123,7 @@ export default function Projects() {
                         <div style={{paddingTop:'10%'}}class='container'>
                             <h4 className='projectTitle'>Event Planner</h4>
                             <p className='projectText'>
-                            For when you need to get organized, Event Planneer is the way to go, just  add, updated, and delete any task or reminders you may need throughout your day, don't make life harder than it can be.
+                            Event Planner is the way to go. Just  add, update, and delete any task or reminders you may need throughout your day.
                             </p>
                             <div>
                                 <a  className='linkProject'href='https://kr1istin.github.io/Event-Planner/'>View project</a>
@@ -143,7 +143,7 @@ export default function Projects() {
                         <div style={{paddingTop:'10%'}}class='container'>
                             <h4 className='projectTitle'>Employee Tracker</h4>
                             <p className='projectText'>
-                            Employee Tracker was built for an example on how to use inquirer to gather data and use MySQL to update a database. In addition, I furthered my understanding on how to implement the DRY method approach in coding along wtih creating a database, tables, and seeding the table.
+                            Employee Tracker was built as an example on how to use Inquirer to gather data and use MySQL to update a database. In addition, I furthered my understanding on how to implement the DRY method approach in coding, along wtih creating a database, tables, and table seeding.
                             </p>
                             <div>
                                 <a  className='linkProject'href='https://drive.google.com/file/d/1FRFSvo0fj1orrfQNWA6Da8pnkuh8sndE/view'>View project</a>
