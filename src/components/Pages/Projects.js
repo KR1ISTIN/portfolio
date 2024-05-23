@@ -81,19 +81,18 @@ export default function Projects() {
                 <div class="row">
                     <div class="col-sm-5 col-md-6">
                         <div style={{ paddingTop:'10%'}}class='container'>
-                            <h4 className='projectTitle'>Weather Search</h4>
+                            <h4 className='projectTitle'>API Social Network </h4>
                             <p className='projectText'>
-                            For when you need to find out the weather forcast at any destination. Displays current weather and a five day forcast.
-                            </p>
+                            API Social Network is a project I created to learn how MongoDB and Mongoose work to build a backend API with a NoSQL database.</p>
                             <div>
-                                <a  className='linkProject'href='https://kr1istin.github.io/Weather-Search/'>View project</a>
-                                <a  className='linkProject'href='https://github.com/KR1ISTIN/Weather-Search'>View repo</a>
+                                <a  className='linkProject'href='https://drive.google.com/file/d/1qT2XmonUsebOFfqpuclNcV_JB6FoETyi/view'>View project</a>
+                                <a  className='linkProject'href='https://github.com/KR1ISTIN/API-Social-Network'>View repo</a>
                             </div>
                         </div>
                        
                     </div>
                     <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-                        <img className='gitFoodPic'src='./assets/weather.png'></img>
+                        <img className='gitFoodPic'src='./assets/odm.png'></img>
                     </div>
                 </div> 
             </div>
