@@ -18,7 +18,7 @@ const styles = {
 };
 
 const onButtonClick = () => {
-  const pdfUrl = "./assets/KristinDeSalme_Resume_2024.pdf";
+  const pdfUrl = "./assets/KristinDeSalme_Resume_.pdf";
   const link = document.createElement("a");
   link.href = pdfUrl;
   link.download = "KristinDeSalme_Resume.pdf";
@@ -113,7 +113,7 @@ export default function Resume() {
               </div>
               <p />
               <div class="col-sm-12">
-                <strong>Databases:</strong> PostgreSQL, MySQL, NoSQL, MongoDB,
+                <strong>Databases:</strong> MySQL, NoSQL, MongoDB,
                 Sequelize, Mongoose <br />
               </div>
               <p />
