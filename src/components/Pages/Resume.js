@@ -304,7 +304,7 @@ export default function Resume() {
             <div class="row">
               <div style={{ paddingBottom: "1.5em" }} class="col-sm-12">
                 <h6>
-                  Certificate, Master Java, Spring 6 and Spring Boot 3 with
+                  Udemy Certificate, Master Java, Spring 6 and Spring Boot 3 with
                   JDBC, JPA, Security, Docker and Microservices with Telusko
                 </h6>
                 A 42-hour course in mastering Java, Spring, Spring Boot, JPA,
@@ -312,7 +312,7 @@ export default function Resume() {
                 <br /> May 2024
               </div>
               <div style={{ paddingBottom: "1.5em" }} class="col-sm-12">
-                <h6>Certificate, FullStack Web Development: UTSA </h6>A 24-week,
+                <h6>Bootcamp Certificate, FullStack Web Development: UTSA </h6>A 24-week,
                 project driven course, in FullStack JavaScript Web
                 Development/MERN STACK
                 <br></br> July 2023
