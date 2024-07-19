@@ -18,7 +18,7 @@ const styles = {
 };
 
 const onButtonClick = () => {
-  const pdfUrl = "./assets/KristinDeSalme_Resume_.pdf";
+  const pdfUrl = "./assets/KristinDeSalme_Resume.pdf";
   const link = document.createElement("a");
   link.href = pdfUrl;
   link.download = "KristinDeSalme_Resume.pdf";
@@ -88,14 +88,7 @@ export default function Resume() {
           <div class="container text-center">
             <div class="row">
               <div class="col-sm-12">
-                As a FullStack developer and dental hygienist, I offer excellent
-                communication and teamwork skills, along with a keen eagerness
-                and willingness to learn on this journey. The transition from
-                oral health care to programming may seem unexpected, but I
-                thrive on challenges, and web development provides the perfect
-                canvas. I look forward to contributing my diverse experiences
-                and enthusiasm to a new team and making a meaningful impact in
-                the field.
+                As a FullStack developer and Dental Hygienist,  bring excellent communication and teamwork skills, along with a strong eagerness and willingness to learn. While transitioning from oral healthcare to programming may seem unexpected, I thrive on challenges, and web development provides the perfect canvas for my skills. I look forward to contributing my diverse experiences and enthusiasm to a new team and making a meaningful impact in the field.
               </div>
             </div>
             <h5 style={{ padding: "1em", letterSpacing: ".5em" }}>
@@ -121,18 +114,18 @@ export default function Resume() {
                 <strong>Tools/Technologies: </strong>RESTful APIs, Maven,
                 Docker, Microservices, JWT, Auth0, OAuth2, Bycrpt, GraphQL,
                 Jest, Object-oriented programming, Heroku, Git, IntelliJ,
-                pgAdmin4, MySQL Workbench, MVC Pattern
+                pgAdmin4, MySQL Workbench, MVC Pattern, GithubActions CI/CD Pipeline
                 <br />
               </div>
               <p />
               <div class="col-sm-12">
                 <strong>Project Management:</strong> Team Collaboration,
                 Communication, Agile Development, Scrum, Sprint, Kanban, Jira,
-                Github Projects, Wireframming, GithubActions CI/DC Pipeline
+                Github Projects, Wireframming
               </div>
               <p />
               <div class="col-sm-12">
-                <strong>AWS:</strong> IAM, ECS, Elastic Beanstalk, AWS RDS, S3
+                <strong>AWS:</strong> IAM, ECS, Elastic Beanstalk, AWS RDS
               </div>
             </div>
 
@@ -160,15 +153,13 @@ export default function Resume() {
                         sales reps to quickly input leads on the go
                       </li>
                       <li>
-                        <em>Effectively</em> created a central customer MySQL
-                        database with access for customer manipulation
+                        <em>Effectively</em>  created and managed a database to ensure proper organization, security, and accessibility of information.
                       </li>
                       <li>
-                        <em>Reducing operational debt</em> by integrating
-                        multiple systems together
+                        <em>Reduced operational debt</em> by integrating multiple APIs to streamline data exchange and enhance system functionality.
                       </li>
                       <li>
-                        <em>Implenting</em> security best practices
+                        <em>Implementation</em> unit tests using Jest to ensure code quality and reliability.
                       </li>
                     </ul>
                   </div>
@@ -209,7 +200,7 @@ export default function Resume() {
                       </li>
                       <li>
                         <em>Enhancing</em> cleanliness in code base by
-                        addressing errors, with unit tests being added
+                        addressing errors, with unit test.
                       </li>
                     </ul>
                   </div>

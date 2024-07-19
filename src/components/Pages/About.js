@@ -26,16 +26,16 @@ export default function About() {
             <div style={{color:'pink'}}>Frameworks/Libraries: </div>Spring, Spring Boot, Spring Security, Node.js, Express.js, React, Handlebars, Bootstrap, MaterialUI, Bulma, Tailwind
             <br></br>
             <br></br>
-            <div style={{color:'pink'}}>Databases:</div> PostgreSQL, MySQL, NoSQL, MongoDB, Sequelize, Mongoose
+            <div style={{color:'pink'}}>Databases:</div>MySQL, NoSQL, MongoDB, Sequelize, Mongoose
             <br></br>
             <br></br>
-            <div style={{color:'pink'}}>Tools/Technologies:</div> RESTful APIs, Maven, Docker, Microservices, JWT, Auth0, OAuth2, Bycrpt, GraphQL, Jest, Object-oriented programming, Heroku, Git, IntelliJ, pgAdmin4, MySQL Workbench, MVC Pattern
+            <div style={{color:'pink'}}>Tools/Technologies:</div> RESTful APIs, Maven, Docker, Microservices, JWT, Auth0, OAuth2, Bycrpt, GraphQL, Jest, Object-oriented programming, Heroku, Git, IntelliJ, pgAdmin4, MySQL Workbench, MVC Pattern, GithubActions CI/CD Pipeline
             <br></br>
             <br></br>
-            <div style={{color:'pink'}}>Project Management:</div> Team Collaboration, Communication, Agile Development, Scrum, Sprint, Kanban, Jira, Github Projects, Wireframming, GithubActions CI/DC Pipeline
+            <div style={{color:'pink'}}>Project Management:</div> Team Collaboration, Communication, Agile Development, Scrum, Sprint, Kanban, Jira, Github Projects, Wireframming
             <br></br>
             <br></br>
-            <div style={{color:'pink'}}>AWS: </div>IAM, ECS, Elastic Beanstalk, AWS RDS, S3
+            <div style={{color:'pink'}}>AWS: </div>IAM, ECS, Elastic Beanstalk, AWS RDS
             <br></br>
             <br></br>
             </div>
